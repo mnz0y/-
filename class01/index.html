@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리반 학생</title>
+    <style>
+        h1{text-align: center;
+        color: lavenderblush;
+    text-shadow: 0 1px 4px purple;}
+        table{
+            width: 300px;
+            margin: 3% auto;
+            text-align: center;
+            border: 1px solid lavender;
+        }
+        table tr:nth-of-type(2n){
+            background-color: lavenderblush;
+        }
+        table td{
+            border: 1px solid lavender;
+            padding: 1%;
+        }
+        #myInput{
+            display: block;
+            width: 300px;
+            margin: 0 auto;
+            outline: none;
+            border-radius: 50px;
+            border: 3px solid lavender;
+            padding: 5px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>우리반 학생</h1>
+    <div class="wrap"></div>
+    <input id="myInput" type="text" placeholder="Search...">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $.ajax({
+            url: "./s01.json",
+            dataType: "json"
+        })
+            .done(function (msg) {
+                if(msg.length>0){
+                    const tb =$("<table/>");
+                    
+                    for(let i in msg){
+                        let $id = msg[i].id;
+                        let $name = msg[i].name;
+                        let $team = msg[i].team;
+
+                        let row = $("<tr/>").append(
+                            $("<td/>").text($id),
+                            $("<td/>").text($name),
+                            $("<td/>").text($team),
+                        );
+                      tb.append(row);  
+                    }
+                  $(".wrap").append(tb)
+                }
+         });
+
+        $("#myInput").on("keyup",function(){
+            let value = $(this).val();
+            $(".wrap tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+            });
+        });
+    </script>
+</body>
+
+</html>

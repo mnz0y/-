@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우리반 학생</title>
+    <title>과일</title>
     <style>
         h1{text-align: center;
         color: lavenderblush;
     text-shadow: 0 1px 4px purple;}
         table{
-            width: 300px;
+            width: 400px;
             margin: 3% auto;
             text-align: center;
             border: 1px solid lavender;
@@ -24,7 +24,7 @@
         }
         #myInput{
             display: block;
-            width: 300px;
+            width: 400px;
             margin: 0 auto;
             outline: none;
             border-radius: 50px;
@@ -46,48 +46,57 @@
             text-align: center;
             padding: 5px;
         }
+        a:nth-of-type(1){
+            left: 10px;
+        }
     </style>
 
 </head>
 
 <body>
-    <h1>우리반 학생</h1>
+    <h1>과일 가격표</h1>
     <div class="wrap"></div>
     <input id="myInput" type="text" placeholder="Search...">
-    <a href="index _2.html" target="_blank">Page 2</a>
+    <a href="index.html" target="_blank">Page 1</a>
+    <a href="index _3.html" target="_blank">Page 3</a>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script>
         $.ajax({
-            url: "./s01.json",
+            url: "./s02.json",
             dataType: "json"
         })
             .done(function (msg) {
-                if(msg.length>0){
-                    const tb =$("<table/>");
-                    
-                    for(let i in msg){
-                        let $id = msg[i].id;
-                        let $name = msg[i].name;
-                        let $team = msg[i].team;
+              if(msg.length>0){
+                const tb = $("<table/>");
 
-                        let row = $("<tr/>").append(
-                            $("<td/>").text($id),
-                            $("<td/>").text($name),
-                            $("<td/>").text($team),
-                        );
-                      tb.append(row);  
-                    }
-                  $(".wrap").append(tb)
+                for(let i in msg){
+                    let $id = msg[i].id;
+                    let $name = msg[i].name;
+                    let $price = msg[i].price;
+                    let $kg = msg[i].kg;
+
+                let row = $("<tr/>").append(
+                    $("<td/>").text($id),
+                    $("<td/>").text($name),
+                    $("<td/>").text($price),
+                    $("<td/>").text($kg)
+                );
+                    tb.append(row);
                 }
+              $(".wrap").append(tb);
+              }
          });
 
-        $("#myInput").on("keyup",function(){
+         $("#myInput").on("keyup",function(){
             let value = $(this).val();
             $(".wrap tr").filter(function(){
-                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
             });
-        });
+         });
+
+        
+     
     </script>
 </body>
 

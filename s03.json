@@ -1,0 +1,18 @@
+[
+    {"id":1,"name":"사자","gender":"Female","kg":50},
+    {"id":2,"name":"호랑이","gender":"Male","kg":60},
+    {"id":3,"name":"원숭이","gender":"Female","kg":15},
+    {"id":4,"name":"코끼리","gender":"Female","kg":230},
+    {"id":5,"name":"물개","gender":"Male","kg":77},
+    {"id":6,"name":"수달","gender":"Male","kg":6},
+    {"id":7,"name":"펭귄","gender":"Female","kg":10},
+    {"id":8,"name":"사막여우","gender":"Female","kg":3.5},
+    {"id":9,"name":"기린","gender":"Female","kg":110},
+    {"id":10,"name":"하이에나","gender":"Male","kg":18},
+    {"id":11,"name":"곰","gender":"Male","kg":120},
+    {"id":12,"name":"팬더","gender":"Female","kg":100},
+    {"id":13,"name":"백호","gender":"Female","kg":80},
+    {"id":14,"name":"캥거루","gender":"Female","kg":50},
+    {"id":15,"name":"코알라","gender":"Male","kg":30}
+
+]

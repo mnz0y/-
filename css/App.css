@@ -1,0 +1,97 @@
+.navbar {
+  padding: 1% 2% !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  font-family: "Lemon";
+  font-size: 30px;
+}
+
+.swiper {
+  height: 100vh;
+}
+
+.swiper-slide:nth-child(1) {
+  position: relative;
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 190px;
+}
+.swiper-slide:nth-child(1) p {
+  position: absolute;
+  bottom: 50px;
+  padding-left: 3%;
+}
+.swiper-slide:nth-child(2) {
+  position: relative;
+  font-family: "Lemon";
+  font-size: 50px;
+}
+.swiper-slide:nth-child(2) h2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  line-height: 60px;
+}
+.swiper-slide:nth-child(2) img:nth-child(1) {
+  position: absolute;
+  top: 210px;
+  right: 560px;
+}
+.swiper-slide:nth-child(2) img:nth-child(3) {
+  position: absolute;
+  top: 408px;
+  left: 300px;
+}
+.swiper-slide:nth-child(3) {
+  position: relative;
+}
+.swiper-slide:nth-child(3) .textbox {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+}
+.swiper-slide:last-child {
+  position: relative;
+}
+.swiper-slide:last-child div {
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  bottom: 100px;
+  padding-right: 3%;
+}
+.swiper-slide:last-child div h2 {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 200px;
+}
+.swiper-slide:last-child div h4 {
+  font-family: "Lemon";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 150px;
+}
+.swiper-slide:last-child div small {
+  line-height: 35px;
+}
+
+@keyframes rolling {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100000px 0;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: #333 !important;
+  scale: 1.4;
+}

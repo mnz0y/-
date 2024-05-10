@@ -1,0 +1,870 @@
+@import '_reset.scss';
+
+
+
+@import url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1173082/Voga.css');
+
+//네비
+.navbar {
+    padding: 1% 2% !important;
+    p{position: absolute; top: 20%; right: 2%; font-size: 14px;}
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    font-family: $eng-title;
+    font-size: 30px;
+}
+
+.swiper {
+    height: 100vh;
+
+}
+
+.swiper-slide {
+
+    //첫번째 슬라이드
+    &:nth-child(1) {
+        position: relative;
+
+        .title {
+            position: absolute;
+            bottom: 50px;
+            padding-left: 3%;
+
+            &.start span {
+                animation-name: titleShow;
+            }
+            span {
+                font : {
+                    family: $eng-sub;
+                    weight: 900;
+                    size: 190px;
+                }
+
+                -webkit-animation: titleShow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+                animation: 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+
+            }
+
+            .first {
+                span {
+                    &:nth-child(1) {
+                        -webkit-animation-delay: 0.1s;
+                        animation-delay: 0.1s;
+                    }
+
+                    &:nth-child(2) {
+                        -webkit-animation-delay: 0.2s;
+                        animation-delay: 0.2s;
+                    }
+
+                    &:nth-child(3) {
+                        -webkit-animation-delay: 0.3s;
+                        animation-delay: 0.3s;
+                    }
+
+                    &:nth-child(4) {
+                        -webkit-animation-delay: 0.4s;
+                        animation-delay: 0.4s;
+                    }
+
+                    &:nth-child(5) {
+                        -webkit-animation-delay: 0.5s;
+                        animation-delay: 0.5s;
+                    }
+
+                    &:nth-child(6) {
+                        -webkit-animation-delay: 0.6s;
+                        animation-delay: 0.6s;
+                    }
+
+                    &:nth-child(7) {
+                        -webkit-animation-delay: 0.7s;
+                        animation-delay: 0.7s;
+                    }
+
+                    &:nth-child(8) {
+                        -webkit-animation-delay: 0.8s;
+                        animation-delay: 0.8s;
+                    }
+
+                    &:nth-child(9) {
+                        -webkit-animation-delay: 0.9s;
+                        animation-delay: 0.9s;
+                    }
+                }
+            }
+
+            .second {
+                span {
+                    &:nth-child(1) {
+                        -webkit-animation-delay: 1.0s;
+                        animation-delay: 1.0s;
+                    }
+
+                    &:nth-child(2) {
+                        -webkit-animation-delay: 1.1s;
+                        animation-delay: 1.1s;
+                    }
+
+                    &:nth-child(3) {
+                        -webkit-animation-delay: 1.2s;
+                        animation-delay: 1.2s;
+                    }
+
+                    &:nth-child(4) {
+                        -webkit-animation-delay: 1.3s;
+                        animation-delay: 1.3s;
+                    }
+
+                    &:nth-child(5) {
+                        -webkit-animation-delay: 1.4s;
+                        animation-delay: 1.4s;
+                    }
+
+                    &:nth-child(6) {
+                        -webkit-animation-delay: 1.5s;
+                        animation-delay: 1.5s;
+                    }
+
+                    &:nth-child(7) {
+                        -webkit-animation-delay: 1.6s;
+                        animation-delay: 1.6s;
+                    }
+
+                    &:nth-child(8) {
+                        -webkit-animation-delay: 1.7s;
+                        animation-delay: 1.7s;
+                    }
+
+                    &:nth-child(9) {
+                        -webkit-animation-delay: 1.8s;
+                        animation-delay: 1.8s;
+                    }
+
+                    &:nth-child(10) {
+                        -webkit-animation-delay: 1.9s;
+                        animation-delay: 1.9s;
+                    }
+
+                    &:nth-child(11) {
+                        -webkit-animation-delay: 2.0s;
+                        animation-delay: 2.0s;
+                    }
+
+                    &:nth-child(12) {
+                        -webkit-animation-delay: 2.1s;
+                        animation-delay: 2.1s;
+                    }
+
+                    &:nth-child(13) {
+                        -webkit-animation-delay: 2.2s;
+                        animation-delay: 2.2s;
+                    }
+                }
+            }
+
+        }
+    }
+
+    //두번째 슬라이드
+    &:nth-child(2) {
+        position: relative;
+        font-family: $eng-title;
+        font-size: 50px;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            line-height: 60px;
+
+            span {
+                position: relative;
+                top: 5px;
+                left: 15px;
+                display: inline-block;
+                animation: bounce 0.5s ease infinite alternate;
+                font-size: 40px;
+                color: #063f19dc;
+                text-shadow: 0 1px 0 #729c7f,
+                    0 2px 0 #729c7f,
+                    0 3px 0 #729c7f,
+                    0 4px 0 #729c7f,
+                    0 5px 0 #729c7f,
+                    0 6px 0 transparent,
+                    0 7px 0 transparent,
+                    0 8px 0 transparent,
+                    0 9px 0 transparent,
+                    0 10px 10px rgba(0, 0, 0, .4);
+
+                &:nth-child(2) {
+                    animation-delay: .1s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: .2s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: .3s;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: .4s;
+                }
+
+                &:nth-child(6) {
+                    animation-delay: .5s;
+                }
+
+                &:nth-child(7) {
+                    animation-delay: .6s;
+                }
+
+                &:nth-child(8) {
+                    animation-delay: .7s;
+                }
+            }
+
+            @keyframes bounce {
+                100% {
+                    top: -8px;
+                    text-shadow: 0 1px 0 #729c7f,
+                        0 2px 0 #729c7f,
+                        0 3px 0 #729c7f,
+                        0 4px 0 #729c7f,
+                        0 5px 0 #729c7f,
+                        0 6px 0 #729c7f,
+                        0 7px 0 #729c7f,
+                        0 8px 0 #729c7f,
+                        0 9px 0 #729c7f,
+                        0 50px 25px rgba(0, 0, 0, .2);
+                }
+            }
+        }
+
+
+        .greenImg1 {
+            position: absolute;
+            top: 210px;
+            right: 560px;
+            animation: 3s;
+
+        }
+
+        .green1 {
+            animation-name: fadeInRight;
+        }
+
+        .greenImg2 {
+            position: absolute;
+            top: 408px;
+            left: 15%;
+            animation: 3s;
+        }
+
+        .green2 {
+            animation-name: fadeInLeft;
+        }
+
+    }
+
+    //3번째 슬라이드
+    &:nth-child(3) {
+        .textbox {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .leftside {
+                width: 20%;
+
+                h2 {
+                    font-family: $eng-title;
+                    line-height: 100px;
+                }
+
+                p {
+                    i {
+                        font: {
+                            weight: 600;
+                            family: $eng-sub;
+                            size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .rightside {
+                width: 887px;
+                height: 582px;
+                margin: 70px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+
+                ;
+
+            }
+        }
+    }
+
+    //contact페이지
+    &:last-child {
+        position: relative;
+
+        .animated-title {
+            color: #222;
+            font-family: $eng-sub;
+            height: 90vmin;
+            position: absolute;
+            top: 18%;
+            right: 5%;
+            width: 53%;
+            text-align: right;
+
+            .text-top {
+                border-bottom: 5px solid #000;
+                top: 0;
+
+                &.show1 div {
+                    animation-name: showTopText;
+                }
+
+                div {
+                    animation: 1s;
+                    animation-delay: 0.4s;
+                    animation-fill-mode: forwards;
+                    bottom: 0;
+                    transform: translate(0, 100%);
+                }
+            }
+
+            .text-bottom {
+                bottom: 0;
+
+                &.show2 div {
+                    animation-name: showBottomText;
+                }
+
+                div {
+                    animation: 0.5s;
+                    animation-delay: 1.5s;
+                    animation-fill-mode: forwards;
+                    top: 0;
+                    transform: translate(0, -100%);
+
+                    font : {
+                        weight: 600;
+                        size: 40px;
+                        family: $eng-title
+                    }
+                }
+            }
+
+        }
+
+        .animated-title>div {
+            height: 50%;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+
+            div {
+                width: 100%;
+                font-size: 200px;
+                font-weight: 900;
+                padding: 2vmin 0;
+                position: absolute;
+
+                span {
+                    display: block;
+
+                    &:nth-child(1) {
+                        font-size: 30px;
+                        color: #455F4B;
+                        font-family: $eng-title;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 14px;
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            text-align: right;
+
+            small {
+                line-height: 35px;
+            }
+        }
+    }
+
+}
+
+//works
+#works {
+    position: relative;
+}
+
+.works {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    //프로젝트1
+    &:nth-child(1) {
+        .pc {
+            img {
+                &:hover {
+                    margin-top: -2440px;
+                }
+            }
+        }
+
+        .mobile {
+            img {
+                transition: all 15s;
+
+                &:hover {
+                    margin-top: -2707px;
+                }
+            }
+        }
+    }
+
+    //프로젝트2
+    &:nth-child(2) {
+        .pc {
+            img {
+                &:hover {
+                    margin-top: -1943px;
+                }
+            }
+        }
+    }
+
+    //프로젝트3
+    &:nth-child(3) {
+        .pc {
+            img {
+                &:hover {
+                    margin-top: -1700px;
+                }
+            }
+        }
+
+        .mobile {
+            img {
+                transition: all 7s;
+
+                &:hover {
+                    margin-top: -853px;
+                }
+            }
+        }
+    }
+
+    //프로젝트4
+    &:nth-child(4) {
+        .pc {
+            img {
+                &:hover {
+                    margin-top: -1465px;
+                }
+            }
+        }
+
+        .mobile {
+            img {
+                transition: all 10s;
+
+                &:hover {
+                    margin-top: -1478px;
+                }
+            }
+        }
+    }
+
+    //프로젝트5
+    &:nth-child(5) {
+        .pc {
+            img {
+                &:hover {
+                    margin-top: -2280px;
+                }
+            }
+        }
+    }
+
+
+    .pc {
+        position: absolute;
+        bottom: 11%;
+        left: 7%;
+        width: 800px;
+        height: 700px;
+        @include backGround(url(../public/img/iMac.png));
+
+        .mock1 {
+            position: absolute;
+            top: 52px;
+            left: 54px;
+            width: 692px;
+            height: 390px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s;
+            opacity: 0.8;
+            .hover {
+                position: absolute;
+                transform: translateX(-50%);
+                top: 50%;
+                left: 50%;
+                width: 300px;
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:hover .hover {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+                transition: all 8s;
+            }
+        }
+    }
+
+    .mobile {
+        position: absolute;
+        width: 167px;
+        height: 332px;
+        bottom: 12%;
+        left: 45%;
+        @include backGround(url(../public/img/iPhone.png));
+
+        .mock2 {
+            position: absolute;
+            top: 13px;
+            left: 12px;
+            border-radius: 16px;
+            width: 85%;
+            height: 92%;
+            overflow: hidden;
+            cursor: pointer;
+            background: #eee;
+            .hover {
+                position: absolute;
+                top: 39%;
+                left: 0;
+                width: 170px;
+                opacity: 1;
+            }
+
+            &:hover .hover {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+                opacity: 0.7;
+                &:hover{opacity: 1;}
+            }
+        }
+    }
+
+    .detail {
+        position: absolute;
+        width: 26%;
+        top: 33%;
+        right: 17.5%;
+
+        h3 {
+
+            position: absolute;
+            top: -67%;
+            left: -6%;
+            z-index: -10;
+            color: #F9F4F4;
+            font-style: italic;
+
+            font : {
+                size: 250px;
+                family: $eng-title
+            }
+
+        }
+
+        h2 {
+            font: {
+                family: $eng-title;
+                size: 45px
+            }
+
+            ;
+            margin-bottom: 3%;
+        }
+
+        h5 {
+            font: {
+                family: $eng-title;
+                size: 14px;
+            }
+
+            ;
+        }
+
+        p {
+            line-height: 30px;
+            white-space: pre-wrap;
+            height: 90px;
+        }
+
+        .btnGroup1 {
+
+            button {
+                padding: 2px 10px;
+                font-size: 12px;
+                margin-right: 5px;
+            }
+        }
+
+        .btnGroup2 {
+            margin: 5% 0;
+
+            button {
+                width: 48%;
+
+                font : {
+                    size: 25px;
+                    family: $eng-title
+                }
+            }
+
+        }
+    }
+}
+
+//문단1 애니메이션
+@-webkit-keyframes titleShow {
+    0% {
+        opacity: 0;
+    }
+
+    33%,
+    66% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes titleShow {
+    0% {
+        opacity: 0;
+    }
+
+    33%,
+    66% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+//문단2 애니메이션
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+//contact 슬라이드 애니메이션
+@keyframes showTopText {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0, 70%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.swiper-pagination {
+    margin-right: 1%;
+}
+
+//스와이프 액티브
+.swiper-pagination-bullet-active {
+    background: #333 !important;
+    scale: 1.4;
+}
+
+//버튼탭 박스
+.btnGroup {
+    position: absolute;
+    bottom: 16%;
+    right: 6%;
+}
+
+//버튼변수
+$height: 65;
+$depth: 6;
+$color: #aaceb6;
+$text-color: darken($color, 10%);
+$lighten-on-hover: 7%;
+$button-speed: .06;
+$timing-function: ease-out;
+
+.btnTab {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-shadow: 0 -2px 0 darken($color, 20%), 0 1px 1px lighten($color, 20%);
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: $text-color;
+
+    &:visited {
+        color: $text-color;
+    }
+
+    height:$height+px;
+    line-height:$height+px;
+    padding: 0 (($height/2)+px);
+    display:inline-block;
+    width:auto;
+    background: linear-gradient(to bottom,
+        saturate(lighten($color, 15%), 35%) 0%,
+        saturate(lighten($color, 12%), 15%) 26%,
+        $color 100%);
+    border-radius:5px;
+    border-top:1px solid lighten($color, 22%);
+    border-bottom:1px solid lighten($color, 20%);
+    top:0;
+    transition:all ($button-speed + s) $timing-function;
+    position:relative;
+}
+
+.btnTab:hover {
+    background: linear-gradient(to bottom,
+            lighten(saturate(lighten($color, 15%), 35%), $lighten-on-hover) 0%,
+            lighten(saturate(lighten($color, 12%), 15%), $lighten-on-hover) 26%,
+            lighten($color, $lighten-on-hover) 100%);
+}
+
+.btnTab:active {
+    top: $depth+px;
+    text-shadow: 0 -2px 0 darken($color, 0%), 0 1px 1px lighten($color, 20%), 0 0 4px white;
+    color: lighten($color, 45%);
+
+    &:before {
+        top: 0;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .7), 0 3px 9px rgba(0, 0, 0, .2);
+
+    }
+}
+
+.btnTab:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: ($depth)+px;
+    border-radius: 5px;
+    height: ($height)+px;
+    background: linear-gradient(to top,
+            saturate(darken($color, 40%), 15%) 0%,
+            saturate(darken($color, 25%), 10%) $depth+px);
+    transition: all (($button-speed*1.3) + s) $timing-function;
+    box-shadow:
+        0 1px 0 2px rgba(0, 0, 0, .3),
+        0 5px ($depth*.4+px) rgba(0, 0, 0, .5),
+        0 ($depth*1.8+px) 9px rgba(0, 0, 0, .2);
+}
+
+//clickme
+.click {
+    position: absolute;
+    bottom: 24%;
+    right: 2.5%;
+    animation: move linear 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(-18deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-18deg);
+    }
+}
+
+
+
